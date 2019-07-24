@@ -1,0 +1,467 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CellLocatiom.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CellLocatiom.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CellLocatiom"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CellLocatiom 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CELLLOCATIOM_DIALOG DIALOGEX 0, 0, 904, 461
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "多模无线环境路测查询系统"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_STATIC_TAB,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,44,233,267
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,243,43,654,411
+    CONTROL         "",IDC_STATIC_REAL,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,243,274,654,180
+    PUSHBUTTON      "实时路测",IDC_BUTTON1,7,4,66,28
+    PUSHBUTTON      "基站查询",IDC_BUTTON11,74,4,66,28
+    PUSHBUTTON      "数据分析",IDC_BUTTON12,141,4,66,28
+    PUSHBUTTON      "基站数据导入",IDC_BUTTON13,208,4,66,28
+    PUSHBUTTON      "路测数据导入",IDC_BUTTON14,274,4,66,28
+    PUSHBUTTON      "版本信息",IDC_BUTTON15,341,4,66,28
+    CONTROL         "",IDC_STATIC_BOTTOM,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,309,890,145
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,37,405,1
+END
+
+IDD_DLG_LOAD DIALOGEX 0, 0, 235, 405
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "设备未连接",IDC_STATIC_LINK,0,352,171,22,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE,WS_EX_STATICEDGE
+    CONTROL         "采集数据实时上报",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,97,325,101,16
+    PUSHBUTTON      "数据下载",IDC_BUTTON1,175,377,50,20,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,0,235,307
+    PUSHBUTTON      "校准时间",IDC_BUTTON3,176,353,50,19,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | NOT WS_VISIBLE,7,
+                    319,229,1
+    LTEXT           "  时间： 00-00-00 00:00:00",IDC_STATIC_TIME,0,69,153,17,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_INFO,0,376,171,22,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    PUSHBUTTON      "数据入库",IDC_BUTTON9,185,329,50,20,NOT WS_VISIBLE
+    CONTROL         "自动删除新增测试点附近10米旧数据",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,6,331,144,
+                    10
+END
+
+IDD_DLG_QRY DIALOGEX 0, 0, 234, 562
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "GPS",IDC_STATIC_GPS,21,483,196,19,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    PUSHBUTTON      "刷新",IDC_BUTTON1,22,500,60,18,NOT WS_VISIBLE
+    CONTROL         "显示当前地图位置基站信息",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | NOT WS_VISIBLE | WS_GROUP,
+                    7,457,144,14
+    CONTROL         "指定基站参数查询",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,18,23,143,14
+    CONTROL         "按路测时间查询",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | NOT WS_VISIBLE,17,383,123,10
+    RTEXT           "网络名称",IDC_STATIC_1,32,53,49,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO1,95,53,113,191,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "LAC",IDC_STATIC_2,32,78,49,14,SS_CENTERIMAGE
+    RTEXT           "CID",IDC_STATIC_3,32,100,49,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,95,76,87,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,95,98,87,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON2,166,23,57,18
+    PUSHBUTTON      "放大",IDC_BUTTON3,52,492,59,19,NOT WS_VISIBLE
+    PUSHBUTTON      "移动到一个点",IDC_BUTTON4,156,536,59,19,NOT WS_VISIBLE
+    PUSHBUTTON      "Button5",IDC_BUTTON5,79,541,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Button6",IDC_BUTTON6,160,494,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "查询",IDC_BUTTON7,159,453,57,18,NOT WS_VISIBLE
+    PUSHBUTTON      "查询",IDC_BUTTON8,169,377,58,18,NOT WS_VISIBLE
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | NOT WS_VISIBLE | 
+                    WS_TABSTOP | 0x8,95,401,124,19
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | NOT WS_VISIBLE | 
+                    WS_TABSTOP | 0x8,95,423,123,18
+    RTEXT           "起始时间",IDC_STATIC_4,31,401,49,14,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE
+    RTEXT           "终止时间",IDC_STATIC_5,31,425,49,14,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE
+    CTEXT           "",IDC_STATIC_CUR,7,475,200,18,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | NOT WS_VISIBLE,7,
+                    371,218,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,127,219,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | NOT WS_VISIBLE,7,
+                    450,217,1
+    EDITTEXT        IDC_EDIT3,7,537,200,18,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "导出数据",IDC_BUTTON10,161,500,58,18,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "按经纬度查询",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,19,143,139,10
+    PUSHBUTTON      "查询",IDC_BUTTON16,165,137,58,18
+    RTEXT           "经度",IDC_STATIC_6,32,167,49,14,SS_CENTERIMAGE
+    RTEXT           "纬度",IDC_STATIC_7,32,188,49,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT4,95,165,87,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,95,187,87,18,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,216,218,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,3,7,227,420
+    LTEXT           "查询历史：",IDC_STATIC_HIS,13,224,78,16
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,240,220,181
+END
+
+IDD_DLG_REALTIME DIALOGEX 0, 0, 769, 168
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,0,0,104,161
+    CONTROL         "移动GSM",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,4,3,95,17,WS_EX_STATICEDGE
+    CONTROL         "联通GSM",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,22,95,17,WS_EX_STATICEDGE
+    CONTROL         "电信CDMA",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,41,95,17,WS_EX_STATICEDGE
+    CONTROL         "联通WCDMA",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,60,95,17,WS_EX_STATICEDGE
+    CONTROL         "移动TD",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,80,95,17,WS_EX_STATICEDGE
+    CONTROL         "移动LTE",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,100,95,17,WS_EX_STATICEDGE
+    CONTROL         "联通LTE",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,120,95,17,WS_EX_STATICEDGE
+    CONTROL         "电信LTE",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,4,140,95,17,WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,108,0,472,
+                    161
+    PUSHBUTTON      "保存当前数据",IDC_BUTTON1,673,132,83,20
+    EDITTEXT        IDC_EDIT1,591,119,84,18,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "设置目标CID",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,591,97,84,20,WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | NOT WS_VISIBLE,
+                    591,91,82,1
+    PUSHBUTTON      "设置为中心点",IDC_BUTTON11,591,141,83,20,NOT WS_VISIBLE
+    LTEXT           "备注信息：",IDC_STATIC_MK,591,5,127,17
+    EDITTEXT        IDC_EDIT2,590,24,167,103,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,583,0,179,161
+END
+
+IDD_DLG_MARK DIALOG DISCARDABLE  0, 0, 187, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑信息"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,173,35,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,66,50,50,17
+END
+
+IDD_DLG_RST DIALOG DISCARDABLE  0, 0, 811, 168
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,0,804,163
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CellLocatiom Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CellLocatiom\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CellLocatiom.EXE\0"
+            VALUE "ProductName", "CellLocatiom 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CELLLOCATIOM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 897
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 454
+    END
+
+    IDD_DLG_LOAD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 398
+    END
+
+    IDD_DLG_QRY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 555
+    END
+
+    IDD_DLG_REALTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 762
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_DLG_MARK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_DLG_RST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 804
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CELLLOCATIOM_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x6564, 0x0000, 0x3fc5, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_DLG_QRY DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 12, 0
+0xd0d6, 0xfab9, 0xc6d2, 0xafb6, 0x5347, 0x004d, 
+    IDC_COMBO1, 0x403, 12, 0
+0xd0d6, 0xfab9, 0xaac1, 0xa8cd, 0x5347, 0x004d, 
+    IDC_COMBO1, 0x403, 13, 0
+0xd0d6, 0xfab9, 0xe7b5, 0xc5d0, 0x4443, 0x414d, "\000" 
+    IDC_COMBO1, 0x403, 14, 0
+0x4357, 0x4d44, 0x2841, 0xaac1, 0xa8cd, 0x4733, 0x0029, 
+    IDC_COMBO1, 0x403, 11, 0
+0x4454, 0xd228, 0xb6c6, 0x33af, 0x2947, "\000" 
+    IDC_COMBO1, 0x403, 12, 0
+0x544c, 0x2845, 0xaac1, 0xa8cd, 0x4734, 0x0029, 
+    IDC_COMBO1, 0x403, 12, 0
+0x544c, 0x2845, 0xc6d2, 0xafb6, 0x4734, 0x0029, 
+    IDC_COMBO1, 0x403, 12, 0
+0x544c, 0x2845, 0xe7b5, 0xc5d0, 0x4734, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\Cursor.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\Sys.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\Tabs.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\TabsDisabled.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "导出到Excel表格",             ID_MENU_EXPORT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CellLocatiom(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CellLocatiom.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
